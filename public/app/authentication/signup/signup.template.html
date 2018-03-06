@@ -1,0 +1,26 @@
+<form (ngSubmit) = "signup()">
+  <div>
+    <label>First Name:</label>
+    <input type="text" name="firstName" [(NgModel)]="user.firstName">
+  </div>
+  <div>
+    <label>Last Name:</label>
+    <input type="text" name="lastName" [(NgModel)]="user.lastName">
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="text" name="email" [(NgModel)]="user.email">
+  </div>
+  <div>
+    <label>Username:</label>
+    <input type="text" name="username" [(NgModel)]="user.username">
+  </div>
+  <div>
+    <label>Username:</label>
+    <input type="password" name="password" [(NgModel)]="user.password">
+  </div>
+  <div>
+    <input type="submit" value="Sign up">
+  </div>
+  <span>{{errorMessage}}</span>
+</form>

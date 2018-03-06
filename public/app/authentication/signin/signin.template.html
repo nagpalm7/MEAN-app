@@ -1,0 +1,14 @@
+<form (ngSubmit) = "signin()">
+  <div>
+    <label>Username:</label>
+    <input type="text" name="username" [(NgModel)]="credentials.username">
+  </div>
+  <div>
+    <label>Username:</label>
+    <input type="password" name="password" [(NgModel)]="credentials.password">
+  </div>
+  <div>
+    <input type="submit" value="Sign In">
+  </div>
+  <span>{{errorMessage}}</span>
+</form>
